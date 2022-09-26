@@ -59,6 +59,7 @@ input {
 }
 
 section {
+  width: fit-content;
   text-align: center;
 }
 section p {
