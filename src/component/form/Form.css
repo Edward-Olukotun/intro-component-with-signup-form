@@ -1,0 +1,72 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --darkblue: hsl(249, 10%, 26%);
+  --grayishblue: hsl(246, 25%, 77%);
+  --family: "poppins", sans-serif;
+  --font: 16px;
+  --thin: 400;
+  --small: 500;
+  --medium: 600;
+  --large: 700;
+}
+.form {
+  width: 80%;
+  height: fit-content;
+  text-align: center;
+  margin: auto;
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+input {
+  background: #fff;
+  border: 2px solid var(--grayishblue);
+  border-radius: 5px;
+  color: var(--blue);
+  height: 30px;
+  width: 80%;
+  margin: 5px;
+}
+
+.error-icon {
+  height: 18px;
+  width: 18px;
+  margin-left: -30px;
+  margin-bottom: -3px;
+}
+.error {
+  color: var(--red);
+  margin-left: 22%;
+}
+.btn {
+  width: 100%;
+  height: 50px;
+  background: var(--green);
+  color: white;
+  text-align: center;
+  margin: auto;
+  border: 2px solid white;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+section {
+  text-align: center;
+}
+section p {
+  font-size: var(--font);
+}
+section span {
+  color: var(--red);
+}
+section span:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --darkblue: hsl(249, 10%, 26%);
+  --grayishblue: hsl(246, 25%, 77%);
+  --family: "poppins", sans-serif;
+  --font: 16px;
+  --thin: 400;
+  --small: 500;
+  --medium: 600;
+  --large: 700;
+}
+.top {
+  width: 80%;
+  height: 10%;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+.ad {
+  width: 80%;
+  height: 10%;
+  background: var(--blue);
+  color: white;
+  text-align: center;
+  margin: auto;
+  border: 2px solid hsl(0, 100%, 74%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.ad :hover {
+  cursor: pointer;
+}
+.bold {
+  font-size: large;
+  font-weight: 600;
+}
