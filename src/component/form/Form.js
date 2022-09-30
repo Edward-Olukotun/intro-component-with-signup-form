@@ -29,20 +29,17 @@ function Form() {
     }
 
     const validation = (value) => {
-        const regex = /^[a-z ,.'-]+$/i
-        if (value === firstName && !firstName || regex.test(firstName) === false) {
+        if (value === firstName && !firstName) {
             return "First name cannot be empty";
         }
-        const regex2 = /^[a-z ,.'-]+$/i
-        if (value === lastName && !lastName || regex2.test(lastName) === false) {
+        if (value === lastName && !lastName) {
             return "Last name cannot be empty";
         }
-        const regex3 = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        if (value === email && !email || regex3.test(email) === false) {
+        const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        if (value === email && !email || regex.test(email) === false) {
             return "looks like this is not an email";
         }
-        const regex4 = /^[a-z ,.'-]+$/i
-        if (value === password && !password || regex4.test(lastName) === false) {
+        if (value === password && !password) {
             return "Password cannot be empty";
         } return;
     }
@@ -50,9 +47,6 @@ function Form() {
         <>
             <div className='bottom'>
                 <div className="ad">
-                    {/* <span className='mobile'>
-                        <span className="bold">Try it free 7 days</span>  then <br /> $20/mo. thereafter
-                    </span> */}
                     <span className='desktop'>
                         <span className="bold">Try it free 7 days</span>  then $20/mo. thereafter
                     </span>
@@ -72,7 +66,7 @@ function Form() {
                                     src="./images/icon-error.svg"
                                     alt="error-icon"
                                 />
-                                <p className="error">{setErrorFirstName}</p>
+                                <p className="error">{errorFirstName}</p>
                             </>
                         )}
 
