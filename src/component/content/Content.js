@@ -12,11 +12,6 @@ function Content() {
                     invaluable.
                 </p>
             </div>
-            <div className="ad">
-                <span>
-                    <span className="bold">Try it free 7 days</span>  then <br /> $20/mo. thereafter
-                </span>
-            </div>
         </div>
     );
 }

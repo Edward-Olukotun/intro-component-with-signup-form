@@ -25,23 +25,16 @@
 .top p {
   margin: 15px;
 }
-.ad {
-  width: 80%;
-  height: 10%;
-  background: var(--blue);
-  color: white;
-  text-align: center;
-  margin: auto;
-  border: 2px solid hsl(0, 100%, 74%);
-  border-radius: 10px;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
-.ad :hover {
-  cursor: pointer;
-}
-.bold {
-  font-size: large;
-  font-weight: 600;
+@media only screen and (min-width: 768px) {
+  .top {
+    width: 70%;
+  }
+  .top h2 {
+    font-weight: var(--large);
+    font-size: 40px;
+    margin-left: -30px;
+  }
+  .top p {
+    font-size: var(--font);
+  }
 }

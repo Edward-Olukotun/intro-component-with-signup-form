@@ -12,9 +12,36 @@
   --medium: 600;
   --large: 700;
 }
+/* .bottom {
+  height: 100%;
+} */
+.ad {
+  width: 80%;
+  height: 10%;
+  background: var(--blue);
+  color: white;
+  text-align: center;
+  margin: auto;
+  border: 2px solid hsl(0, 100%, 74%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.ad :hover {
+  cursor: pointer;
+}
+/* .desktop {
+  display: none;
+} */
+.bold {
+  font-size: large;
+  font-weight: 600;
+}
 .form {
   width: 80%;
-  height: fit-content;
+  padding: 20px;
+  height: 100%;
   text-align: center;
   margin: auto;
   background: #fff;
@@ -32,7 +59,9 @@ input {
   width: 80%;
   margin: 5px;
 }
-
+/* form:focus-within {
+  color: var(--red);
+} */
 .error-icon {
   height: 18px;
   width: 18px;
@@ -41,10 +70,15 @@ input {
 }
 .error {
   color: var(--red);
-  margin-left: 22%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  line-height: 5px;
+  padding: 5px;
 }
 .btn {
-  width: 100%;
+  width: 85%;
   height: 50px;
   background: var(--green);
   color: white;
@@ -70,4 +104,29 @@ section span {
 }
 section span:hover {
   cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 100%;
+  }
+  .ad {
+    width: 100%;
+    padding: 10px;
+    margin-left: 5px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  section p {
+    font-size: 12px;
+    margin-left: 65px;
+  }
+  .form {
+    width: 100%;
+  }
 }
